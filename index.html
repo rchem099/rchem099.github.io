@@ -9,6 +9,8 @@
     html { background: #101923; }
     body { margin: 0; }
     #bureau-rayane { max-width: 1400px; margin-inline: auto; }
+    #bureau-rayane:has(> .desktop:not([hidden])) { max-width: none; }
+    #bureau-rayane > .desktop { min-height: 100vh; min-height: 100dvh; }
     #bureau-rayane > .desk-view { min-height: min(100svh, 850px); }
     #bureau-rayane .cursor-interaction { cursor: pointer; }
     @media (max-width:600px) {
