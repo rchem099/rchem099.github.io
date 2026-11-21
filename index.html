@@ -96,10 +96,10 @@
   </main>
   <template data-page="projects">
     <div class="project-grid">
-      <a href="https://rchem099.github.io/ai-software.html" target="_blank" rel="noopener"><small>2 PROJECTS · ↗</small><h3>AI &amp; Software</h3><p>Voice assistants, machine learning and full-stack apps.</p></a>
-      <a href="https://rchem099.github.io/embedded-systems.html" target="_blank" rel="noopener"><small>2 PROJECTS · ↗</small><h3>Embedded Systems &amp; IoT</h3><p>Real-time monitoring and connected hardware.</p></a>
-      <a href="https://rchem099.github.io/computer-architecture.html" target="_blank" rel="noopener"><small>6 PROJECTS · ↗</small><h3>Computer Architecture &amp; Digital Design</h3><p>Processors, arithmetic circuits and FPGA controls.</p></a>
-      <a href="https://rchem099.github.io/security-gpu.html" target="_blank" rel="noopener"><small>5 PROJECTS · ↗</small><h3>Security &amp; High-Performance Computing</h3><p>System security and parallel programming on GPUs.</p></a>
+      <a href="#projects/ai-software"><small>2 PROJECTS</small><h3>AI &amp; Software</h3><p>Voice assistants, machine learning and full-stack apps.</p></a>
+      <a href="#projects/embedded-systems"><small>2 PROJECTS</small><h3>Embedded Systems &amp; IoT</h3><p>Real-time monitoring and connected hardware.</p></a>
+      <a href="#projects/computer-architecture"><small>6 PROJECTS</small><h3>Computer Architecture &amp; Digital Design</h3><p>Processors, arithmetic circuits and FPGA controls.</p></a>
+      <a href="#projects/security-gpu"><small>5 PROJECTS</small><h3>Security &amp; High-Performance Computing</h3><p>System security and parallel programming on GPUs.</p></a>
     </div>
     <article class="records project-details">
       <h3>Featured projects</h3>
@@ -111,6 +111,113 @@
       <details><summary>Linux Password Security Audit</summary><p>Analyzed Linux authentication, password storage and hashing, and privilege management.</p></details>
       <details><summary>RISC Pipeline Processor</summary><p>Designed and simulated a five-stage MIPS-based processor in VHDL with hazard detection and data forwarding.</p></details>
     </article>
+  </template>
+  <template data-project-category="ai-software" data-title="AI &amp; Software">
+    <div class="records category-projects">
+      <a class="project-back" href="#projects">← All categories</a>
+      <p>Voice assistants, machine learning and full-stack applications. 2 projects.</p>
+      <article class="project-card">
+        <span class="num">01 · AI / FULL-STACK · FALL 2026</span>
+        <h3>AI Voice News Assistant</h3>
+        <p>Developed a full-stack voice-enabled news assistant that transcribes spoken questions, generates source-linked answers using a local language model, and reads responses aloud. Integrated faster-whisper for speech recognition, Ollama for local LLM inference, and browser speech synthesis. Built an RSS aggregation pipeline covering multiple international news publishers, with article deduplication and PostgreSQL storage through Supabase. Implemented authenticated REST APIs, user-specific data access, listening progress tracking, and consent-based interest memory with voice commands for preference management. Instrumented transcription, database queries, news retrieval, and model inference to identify latency bottlenecks. Configured a temporary HTTPS demonstration using Waitress and Cloudflare Tunnel.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">PostgreSQL</span><span class="tag">Ollama</span><span class="tag">faster-whisper</span><span class="tag">Supabase</span></div>
+      </article>
+      <article class="project-card">
+        <span class="num">02 · AI / DEEP LEARNING</span>
+        <h3>Deep Learning Health Classification</h3>
+        <p>I trained and compared fully connected Keras models for a binary health-classification problem. I changed network depth, hidden units and activation functions, then used early stopping, L2 regularization and dropout to study overfitting and compare precision, recall, F1 and ROC/AUC.</p><div class="tags"><span class="tag">Python</span><span class="tag">Keras</span><span class="tag">Deep Learning</span><span class="tag">Neural Networks</span><span class="tag">L2</span><span class="tag">Dropout</span><span class="tag">ROC/AUC</span></div>
+      </article>
+    </div>
+  </template>
+  <template data-project-category="embedded-systems" data-title="Embedded Systems &amp; IoT">
+    <div class="records category-projects">
+      <a class="project-back" href="#projects">← All categories</a>
+      <p>Real-time monitoring and connected hardware systems. 2 projects.</p>
+      <article class="project-card">
+        <span class="num">01 · EMBEDDED / REAL-TIME</span>
+        <h3>Baby Monitoring System</h3>
+        <p>I built the monitoring logic on STM32 with FreeRTOS, separating sensor acquisition, alarms and wireless communication into concurrent tasks. I handled task synchronization, interrupts and peripheral integration so the system could respond to sensor events in real time.</p>
+        <div class="tags"><span class="tag">STM32</span><span class="tag">FreeRTOS</span><span class="tag">C</span><span class="tag">IoT</span><span class="tag">Interrupts</span><span class="tag">Sensors</span></div>
+        <div class="hero-actions" style="margin-top:18px">
+          <a class="btn primary" href="https://www.youtube.com/watch?v=Oab_2QawVmY&cc_lang_pref=en&cc_load_policy=1" target="_blank" rel="noopener">View Demo Video ↗</a>
+        </div>
+      </article>
+      <article class="project-card">
+        <span class="num">02 · FULL-STACK / EMBEDDED</span>
+        <h3>NOVA Smart Attendance System</h3>
+        <p>I designed the Flask REST API and PostgreSQL database that connected the RFID and facial-recognition components to the NVIDIA Jetson Nano and web dashboard. I also worked on authentication, role-based access control, hashed credentials, HTTPS and real-time data synchronization.</p>
+        <div class="tags"><span class="tag">Flask</span><span class="tag">React</span><span class="tag">PostgreSQL</span><span class="tag">REST API</span><span class="tag">Jetson Nano</span><span class="tag">RFID</span><span class="tag">Security</span></div>
+      </article>
+    </div>
+  </template>
+  <template data-project-category="computer-architecture" data-title="Computer Architecture &amp; Digital Design">
+    <div class="records category-projects">
+      <a class="project-back" href="#projects">← All categories</a>
+      <p>Processors, arithmetic circuits and FPGA control systems. 6 projects.</p>
+      <article class="project-card">
+        <span class="num">01 · COMPUTER ARCHITECTURE</span>
+        <h3>5-Stage RISC Pipeline Processor</h3>
+        <p>I built a five-stage MIPS-style processor in VHDL with fetch, decode, execute, memory and write-back stages. The design used an 8-bit datapath, 32-bit instructions and separate instruction and data memories. I integrated pipeline registers, hazard detection and forwarding to handle instruction dependencies and control hazards.</p><div class="tags"><span class="tag">VHDL</span><span class="tag">MIPS</span><span class="tag">RTL</span><span class="tag">Pipelining</span><span class="tag">Hazard Detection</span><span class="tag">Forwarding</span></div>
+      </article>
+      <article class="project-card">
+        <span class="num">02 · DIGITAL SYSTEMS</span>
+        <h3>Single-Cycle MIPS Processor</h3>
+        <p>I implemented a single-cycle MIPS-style processor in structural VHDL, connecting an 8-bit datapath to 32-bit instructions. I integrated the ALU, register file, instruction decoder, control unit and separate instruction and data memories to support arithmetic, logic, load/store, branch and jump instructions.</p><div class="tags"><span class="tag">VHDL</span><span class="tag">MIPS</span><span class="tag">ALU</span><span class="tag">RTL</span><span class="tag">CPU Design</span><span class="tag">Quartus II</span></div>
+      </article>
+      <article class="project-card">
+        <span class="num">03 · HARDWARE ARITHMETIC</span>
+        <h3>16-Bit Floating-Point Arithmetic Unit</h3>
+        <p>I designed floating-point addition and multiplication circuits in structural VHDL using a custom 16-bit format with a sign bit, a 7-bit exponent biased by 63 and an 8-bit mantissa. The design combined sign and exponent logic, mantissa arithmetic, normalization and overflow detection in synchronous, resettable datapaths.</p><div class="tags"><span class="tag">VHDL</span><span class="tag">Floating Point</span><span class="tag">RTL</span><span class="tag">Normalization</span><span class="tag">Overflow Detection</span><span class="tag">Quartus II</span></div>
+      </article>
+      <article class="project-card">
+        <span class="num">04 · DIGITAL CONTROL</span>
+        <h3>FPGA LED Pattern Controller</h3>
+        <p>I designed a controller for an eight-LED display using the Algorithmic State Machine methodology and structural VHDL. Separate left and right controls selected moving light patterns, with combined motion when both were active and preserved positions when paused. I separated the datapath from one-hot control logic and included a global reset and clock division.</p><div class="tags"><span class="tag">VHDL</span><span class="tag">ASM</span><span class="tag">RTL</span><span class="tag">FPGA</span><span class="tag">One-Hot Control</span><span class="tag">Quartus II</span></div>
+      </article>
+      <article class="project-card">
+        <span class="num">05 · HARDWARE ARITHMETIC</span>
+        <h3>Signed Fixed-Point Arithmetic Unit</h3>
+        <p>I designed a fixed-point ALU in structural VHDL for signed 4-bit addition, subtraction and multiplication, with an 8-bit product. I used ASM diagrams to define the multiplier datapath and control logic, integrated operation selection, and exposed carry, zero and overflow status signals.</p><div class="tags"><span class="tag">VHDL</span><span class="tag">ASM</span><span class="tag">Signed Arithmetic</span><span class="tag">ALU</span><span class="tag">RTL</span><span class="tag">Quartus II</span></div>
+      </article>
+      <article class="project-card">
+        <span class="num">06 · DIGITAL CONTROL</span>
+        <h3>Sensor-Driven Traffic Light Controller</h3>
+        <p>I designed a synchronous finite-state machine in VHDL to coordinate traffic lights at a main-road and side-road intersection. The controller prioritized the main road, responded to a side-road vehicle sensor, and used programmable green intervals with timed yellow transitions. I combined state logic, counters and comparators with clock division and input debouncing.</p><div class="tags"><span class="tag">VHDL</span><span class="tag">FSM</span><span class="tag">FPGA</span><span class="tag">Counters</span><span class="tag">Debouncing</span><span class="tag">Quartus II</span></div>
+      </article>
+    </div>
+  </template>
+  <template data-project-category="security-gpu" data-title="Security &amp; High-Performance Computing">
+    <div class="records category-projects">
+      <a class="project-back" href="#projects">← All categories</a>
+      <p>System security and parallel programming on GPUs. 5 projects.</p>
+      <article class="project-card">
+        <span class="num">01 · SYSTEM SECURITY</span>
+        <h3>Linux Password Security Audit</h3>
+        <p>I examined how Linux stores and verifies credentials through /etc/passwd, /etc/shadow, password hashes and file permissions. I then wrote a C dictionary-attack tool with custom wordlists for an ethical security-testing exercise.</p>
+        <div class="tags"><span class="tag">C</span><span class="tag">Linux</span><span class="tag">Security</span><span class="tag">Password Hashing</span><span class="tag">Authentication</span></div>
+      </article>
+      <article class="project-card">
+        <span class="num">02 · GPU COMPUTING / CUDA</span>
+        <h3>CUDA Kernel Performance Optimization</h3>
+        <p>I optimized CUDA kernels for matrix transposition and parallel reduction, starting with basic global-memory implementations and moving to shared memory, padding and warp-shuffle techniques. I used profiling to examine coalescing, bank conflicts, divergence, occupancy and execution behavior.</p>
+        <div class="tags"><span class="tag">CUDA</span><span class="tag">C/C++</span><span class="tag">GPU Computing</span><span class="tag">Shared Memory</span><span class="tag">Warp Shuffle</span><span class="tag">Nsight Compute</span></div>
+      </article>
+      <article class="project-card">
+        <span class="num">03 · GPU COMPUTING</span>
+        <h3>CUDA Vector & Matrix Addition</h3>
+        <p>I implemented CPU and CUDA versions of vector and matrix addition, managing host-device allocation and data transfers. I used one-dimensional and two-dimensional thread indexing and compared block configurations to examine GPU occupancy, execution timing and the asynchronous behavior of CUDA kernels.</p><div class="tags"><span class="tag">CUDA C/C++</span><span class="tag">GPU Computing</span><span class="tag">Thread Indexing</span><span class="tag">Memory Transfers</span><span class="tag">Nsight Compute</span></div>
+      </article>
+      <article class="project-card">
+        <span class="num">04 · PARALLEL COMPUTING</span>
+        <h3>CUDA Parallel Reduction & Dynamic Parallelism</h3>
+        <p>I explored parallel sum reductions in CUDA, focusing on warp divergence, loop unrolling and template-based kernels. I compared conventional reductions with nested kernel execution through dynamic parallelism and used profiling to examine memory activity, occupancy and latency bottlenecks.</p><div class="tags"><span class="tag">CUDA C/C++</span><span class="tag">Parallel Reduction</span><span class="tag">Warp Divergence</span><span class="tag">Loop Unrolling</span><span class="tag">Dynamic Parallelism</span><span class="tag">nvprof</span></div>
+      </article>
+      <article class="project-card">
+        <span class="num">05 · GPU MEMORY</span>
+        <h3>CUDA Memory Hierarchy Optimization</h3>
+        <p>I explored CUDA memory optimization through matrix multiplication, improving global-memory access patterns and reusing matrix tiles in shared memory. I examined coalescing, alignment and shared-memory bank conflicts, using padding and profiling to compare memory transactions, cache behavior and kernel execution time.</p><div class="tags"><span class="tag">CUDA C/C++</span><span class="tag">Matrix Multiplication</span><span class="tag">Shared Memory</span><span class="tag">Tiling</span><span class="tag">Coalescing</span><span class="tag">Profiling</span></div>
+      </article>
+    </div>
   </template>
   <template data-page="path">
     <article class="records">
@@ -244,6 +351,12 @@
 #rayane-window .project-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:14px}
 #rayane-window .project-grid a {display:block;padding:13px;border:1px solid #77928666;border-radius:8px;text-decoration:none;color:inherit}
 #rayane-window .project-grid a:hover {background:#77928625}
+#rayane-window .category-projects {gap:12px}
+#rayane-window .category-projects a {color:inherit;text-underline-offset:3px}
+#rayane-window .project-back {justify-self:start}
+#rayane-window .project-card {border:1px solid #77928666;border-radius:8px;padding:14px}
+#rayane-window .project-card .tags {display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+#rayane-window .project-card .tag {border:1px solid #77928666;border-radius:5px;padding:3px 7px;font-size:12px}
 #rayane-window h3 {font-size:17px;line-height:1.22}
 #rayane-window p {font-size:14px}
 #rayane-window .records {display:grid;gap:15px}
@@ -671,6 +784,9 @@
   });
   function dismiss() {
     if (!active) return;
+    if (active.matches('[data-app="projects"]') && /^#projects(?:\/|$)/.test(location.hash)) {
+      history.replaceState(null, "", location.pathname + location.search);
+    }
     stopGame();
     panel.hidden = true;
     if (active.matches("[data-app]")) active.setAttribute("aria-expanded", "false");
@@ -679,6 +795,9 @@
   }
   function openWindow(button, pageName, label) {
     if (active === button) return dismiss();
+    if (pageName !== "projects" && /^#projects(?:\/|$)/.test(location.hash)) {
+      history.replaceState(null, "", location.pathname + location.search);
+    }
     if (active?.matches("[data-app]")) active.setAttribute("aria-expanded", "false");
     active = button;
     title.textContent = label;
@@ -693,6 +812,27 @@
   desktop.querySelectorAll("[data-app]").forEach(button => {
     button.addEventListener("click", () => openWindow(button, button.dataset.app, button.textContent.trim()));
   });
+  function showProjectRoute() {
+    const route = location.hash.slice(1);
+    const category = [...root.querySelectorAll("[data-project-category]")]
+      .find(template => route === `projects/${template.dataset.projectCategory}`);
+    const projects = desktop.querySelector('[data-app="projects"]');
+    if (route !== "projects" && !category) {
+      if (active === projects) dismiss();
+      return;
+    }
+
+    desktop.hidden = false;
+    desk.hidden = true;
+    if (active !== projects) openWindow(projects, "projects", "Projects");
+    title.textContent = category ? category.dataset.title : "Projects";
+    content.replaceChildren(category ? category.content.cloneNode(true) : clonePage("projects"));
+    close.focus();
+    panel.scrollIntoView({ block: "nearest" });
+  }
+  window.addEventListener("hashchange", showProjectRoute);
+  showProjectRoute();
+
   function setupGames(windowContent) {
     const snakePanel = windowContent.querySelector('[data-game-panel="snake"]');
     const memoryPanel = windowContent.querySelector('[data-game-panel="memory"]');
